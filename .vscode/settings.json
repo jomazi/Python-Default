@@ -21,5 +21,12 @@
     
     "python.unitTest.pyTestEnabled": false,
     "python.unitTest.unittestEnabled": true,
-    "python.unitTest.nosetestsEnabled": false
+    "python.unitTest.nosetestsEnabled": false,  
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test*.py"
+    ]
 }
