@@ -28,5 +28,7 @@
         "./tests",
         "-p",
         "test*.py"
-    ]
+    ],
+    
+    "python.pythonPath": "venv/bin/python3"
 }
