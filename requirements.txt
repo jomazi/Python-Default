@@ -2,4 +2,4 @@
 helpers==0.1
 
 # formatting
-autopep8 1.5.2 
+autopep8==1.5.2 
