@@ -18,7 +18,7 @@
     source venv/bin/activate
     ```
 
-- Install the ```helpers``` as package
+- Install ```helpers``` as package
 
     ```
     pip install -e .
