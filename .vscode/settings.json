@@ -30,5 +30,11 @@
         "test*.py"
     ],
     
-    "python.pythonPath": "venv/bin/python3"
+    "python.pythonPath": "venv/bin/python3",
+    
+    "files.exclude": {
+        "helpers.egg-info": true,
+        "venv": true,
+        "**/__pycache__": true
+    }
 }
