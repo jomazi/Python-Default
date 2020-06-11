@@ -45,5 +45,11 @@
         "helpers.egg-info": true,
         "venv": true,
         "**/__pycache__": true
+    },
+    
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     }
 }
