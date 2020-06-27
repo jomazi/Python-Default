@@ -6,7 +6,7 @@
 !.vscode/extensions.json
 
 # virtualenv files
-venv/
+.venv/
 
 # Python specific
 # Byte-compiled / optimized / DLL files
@@ -19,9 +19,6 @@ __pycache__/
 
 # environment variables
 .env
-
-# helper package
-helpers.egg-info/
 
 # misc
 todo

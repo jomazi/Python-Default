@@ -3,28 +3,23 @@
     "telemetry.enableCrashReporter": false,
     
     "files.autoSave": "afterDelay",
-    "terminal.integrated.rendererType": "dom",
     
     "editor.minimap.enabled": false,
-    "editor.wordWrapColumn": 120,
-    "editor.wrappingIndent": "none",
-    "editor.defaultFormatter": "ms-python.python",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     
-    "python.jediEnabled": false,
-    
     "python.autoComplete.addBrackets": true,
+
     "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Args": ["--max-line-length", "120", "--experimental"],
+    "python.formatting.autopep8Args": ["--max-line-length", "88", "--experimental"],
     
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.linting.flake8Args": [
-        "--max-line-length=120",
-        "--ignore=E402,F841,F401,E302,E305",
+        "--max-line-length=88",
+        "--ignore=203,E266,E501,W503,F403,F401,E402"
     ],
     
     "python.testing.pytestEnabled": false,
@@ -35,15 +30,14 @@
         "-s",
         "./tests",
         "-p",
-        "test*.py"
+        "*_test.py"
     ],
     
-    "python.pythonPath": "${workspaceFolder}/venv/bin/python",
+    "python.pythonPath": ".venv/bin/python",
     "python.envFile": "${workspaceFolder}/.env",
     
     "files.exclude": {
-        "helpers.egg-info": true,
-        "venv": true,
+        ".venv": true,
         "**/__pycache__": true
     },
     

@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+
+[packages]
+pre-commit = "*"
+
+[scripts]
+tests = "python -m unittest discover -s tests -p '*_test.py'"
+
+[requires]
+python_version = "3.7"

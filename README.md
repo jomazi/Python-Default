@@ -2,31 +2,40 @@
 
 ## Setup
 
-### 1. Python Environment
+1. [Install](https://pipenv.pypa.io/en/latest/#install-pipenv-today) ```pipenv```. You might want to set ```export PIPENV_VENV_IN_PROJECT=1``` in your ```.bashrc/.zshrc``` for local virtual environments.
 
-- Clone repository into preferred directory
+2. Clone repository into preferred directory
 
     ```
     git clone https://github.com/jomazi/Python-Default
-    ```
+    ``` 
 
-- Create virtual environment
+3. Activate virtual environment
 
     ```
     cd Python-Default/
-    virtualenv venv
-    source venv/bin/activate
+    pipenv shell
     ```
 
-- Install ```helpers``` as package
+4. Test Setup
 
     ```
-    pip install -e .
+    python -m main
     ```
 
-- Install required packages
+5. Install Git Hooks
 
     ```
-    pip install -r requirements.txt
+    pre-commit install
     ```
 
+## Testing
+
+```
+pipenv run tests
+```
+
+## Resources
+
+- [Pipenv Cheatsheet](https://gist.github.com/bradtraversy/c70a93d6536ed63786c434707b898d55)
+- [pre-commit Docs](https://pre-commit.com/)
