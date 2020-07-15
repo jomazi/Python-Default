@@ -26,7 +26,7 @@
 5. Install Git Hooks
 
     ```
-    pre-commit install
+    pipenv pre-commit install
     ```
 
 ## Testing
