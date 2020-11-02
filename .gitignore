@@ -21,4 +21,8 @@ __pycache__/
 .env
 
 # misc
-todo
+TODO.md
+
+# data
+src/data/*
+!src/data/.gitkeep
