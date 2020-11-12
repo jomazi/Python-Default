@@ -6,12 +6,14 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 autopep8 = "*"
+coverage = "*"
 
 [packages]
 pre-commit = "*"
 
 [scripts]
-test = "python -m unittest discover -s ./tests -p *_test.py"
+test = "coverage run -m unittest discover -s ./tests -p *_test.py"
+report = "coverage html"
 main = "python ./src/main.py"
 
 [requires]

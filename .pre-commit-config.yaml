@@ -23,6 +23,7 @@
           \.mypy_cache|
           \.tox|
           \.venv|
+          \.htmlcov|
           _build|
           buck-out|
           build|

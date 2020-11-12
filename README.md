@@ -20,17 +20,19 @@
 6. Test setup: `pipenv run main`
 <br>
 
-7. Install Git hooks. They help you to execute tasks before your code is committed (see [Working with Git](#working-with-git)). Learn more about pre-commit in the [official docs](https://pre-commit.com/). In our case they are used to make sure that the application code is well formatted using [black](https://github.com/psf/black), has no syntax errors using [flake8](https://gitlab.com/pycqa/flake8) and that the dependency imports are well sorted using [isort](https://github.com/PyCQA/isort). The pre-commit instructions are given by the `.pre-commit-config.yaml`. Any isort specific settings are given by the `.isort.cfg` file: `pipenv install pre-commit`
+7. Install Git hooks. They help you to execute tasks before your code is committed (see [Working with Git](#working-with-git)). Learn more about pre-commit in the [official docs](https://pre-commit.com/). In our case they are used to make sure that the application code is well formatted using [black](https://github.com/psf/black)/[autopep8](https://github.com/hhatto/autopep8), has no syntax errors using [flake8](https://gitlab.com/pycqa/flake8) and that the dependency imports are well sorted using [isort](https://github.com/PyCQA/isort). The pre-commit instructions are given by the `.pre-commit-config.yaml`. Any isort specific settings are given by the `.isort.cfg` file.
 
 **Note:** To deactivate the environment again, simply run `deactivate`.
 
 ## Testing
 
 A script to automatically execute tests is already defined in the project's `Pipfile`. Therefore you can simply run: `pipenv run test`
+To generate a report on code coverage alongside run: `pipenv run test && pipenv run report`
 
 ## Working with Git
 
-In case you do not know about Git yet it is now time to make yourself familiar with it :) There are already plenty of very good tutorials about Git out there which is why  we refer to them. For a good introduction written in German you might want to go to [Roger Dudler's awesome post](https://rogerdudler.github.io/git-guide/index.de.html).
+In case you do not know about Git yet it is now time to make yourself familiar with it :) 
+There are already plenty of very good tutorials about Git out there which is why  we refer to them. For a good introduction written in German you might want to go to [Roger Dudler's awesome post](https://rogerdudler.github.io/git-guide/index.de.html).
 
 ### Git Workflow
 
