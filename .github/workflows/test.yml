@@ -1,0 +1,24 @@
+name: Tests
+
+on: [push, pull_request]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.7]
+    steps:
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/checkout@v2
+      - name: Install pipenv
+        run: pip install pipenv
+      - name: Install development dependencies
+        run: pipenv install --dev
+      - name: Copy .env file
+        run: cp .example.env .env
+      - name: Run tests
+        run: pipenv run test
