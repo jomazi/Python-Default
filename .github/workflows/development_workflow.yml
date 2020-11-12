@@ -14,22 +14,3 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - uses: psf/black@20.8b1
-
-  flake8:
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 4
-      matrix:
-        python-version: [3.7]
-    steps:
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
-      - uses: actions/checkout@v2
-      - name: Install flake8
-        run: pip install flake8
-      - name: Run flake8
-        uses: suo/flake8-github-action@releases/v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
