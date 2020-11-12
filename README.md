@@ -20,7 +20,7 @@
 6. Test setup: `pipenv run main`
 <br>
 
-7. Install Git hooks. They help you to execute tasks before your code is committed (see [Working with Git](#working-with-git)). Learn more about pre-commit in the [official docs](https://pre-commit.com/). In our case they are used to make sure that the application code is well formatted using [black](https://github.com/psf/black)/[autopep8](https://github.com/hhatto/autopep8), has no syntax errors using [flake8](https://gitlab.com/pycqa/flake8) and that the dependency imports are well sorted using [isort](https://github.com/PyCQA/isort). The pre-commit instructions are given by the `.pre-commit-config.yaml`. Any isort specific settings are given by the `.isort.cfg` file.
+7. Install Git hooks. They help you to execute tasks before your code is committed (see [Working with Git](#working-with-git)). Learn more about pre-commit in the [official docs](https://pre-commit.com/). ([Installation](https://pre-commit.com/#installation) and [Activation](https://pre-commit.com/#3-install-the-git-hook-scripts) are described here) In our case they are used to make sure that the application code is well formatted using [black](https://github.com/psf/black)/[autopep8](https://github.com/hhatto/autopep8), has no syntax errors using [flake8](https://gitlab.com/pycqa/flake8) and that the dependency imports are well sorted using [isort](https://github.com/PyCQA/isort). The pre-commit instructions are given by the `.pre-commit-config.yaml`. Any isort specific settings are given by the `.isort.cfg` file.
 
 **Note:** To deactivate the environment again, simply run `deactivate`.
 
@@ -31,7 +31,7 @@ To generate a report on code coverage alongside run: `pipenv run test && pipenv 
 
 ## Working with Git
 
-In case you do not know about Git yet it is now time to make yourself familiar with it :) 
+In case you do not know about Git yet it is now time to make yourself familiar with it :)
 There are already plenty of very good tutorials about Git out there which is why  we refer to them. For a good introduction written in German you might want to go to [Roger Dudler's awesome post](https://rogerdudler.github.io/git-guide/index.de.html).
 
 ### Git Workflow
@@ -42,7 +42,7 @@ To coordinate the software development process a set of guidelines are necessary
 2. Create an issue that describes a bug or asks for an additional feature.
 3. Add features or solve bug fixes by creating new branches via `git checkout`. Those branches should be named `feature-*` or `fix-*` accordingly. Assign the issue that the code changes are meant to solve.
 4. Commit to new feature or fix branch. Make sure that you also write `tests` which cover the new features or show that the bug is solved. They should run automatically using the [GitHub CI system](https://docs.github.com/en/free-pro-team@latest/actions/guides/about-continuous-integration). Having a CI system set up is not mandatory but helps a lot to avoid mistakes during the development process.
-5. Create pull request once you are done with your work. Use the @mention system to get the maintainer's attention or ask questions to specific people. 
+5. Create pull request once you are done with your work. Use the @mention system to get the maintainer's attention or ask questions to specific people.
 6. Optional discussion about the pull request. If necessary, additional changes can be made.
 7. New branch is merged into `main/master` branch.
 
