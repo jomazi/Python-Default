@@ -13,7 +13,8 @@ if __name__ == "__main__":
     # run example function
     hello_world_success = hello_world()
     print("Hello World completed successfully!") if hello_world_success else print(
-        "Hello Wold failed!")
+        "Hello Wold failed!"
+    )
 
     # exemplify how to access environment variables
     print("\nEnvironment variable: {}".format(os.environ["TEST_PW"]))
